@@ -1,0 +1,13 @@
+Please rig up a content generation pipeline using the OpenAI API.
+
+For a given entity type (e.g. cards, relics, etc) which can have all sorts of fields (e.g. "name", "effect", "image_description", "image_name") please use o3 to craft a set of items for that.
+
+"EntityType" is a class that defines a set of parameter names, and a generalized description of what members of that entity type ought to represent.  There will also be a string denoting some number of examples.
+
+Additionally each time you create an entity I would like three images to be created for that entity using dall-e 3.  The specific parameters would be configurable on a by-entity-type basis.  
+
+I would like this system to, when run, churn out a configurable number of members of each type of entity, including image names, and then hit the dall-e 3 image api to churn out a number of images corresponding to said entity, ideally with some human-readable but unique name.
+
+The textual output should be in the form of a YAML file, along with image files in a subdirectory.
+
+Use typescript and node.js
