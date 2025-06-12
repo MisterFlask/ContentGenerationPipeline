@@ -1,0 +1,182 @@
+
+Archon
+Bolster – Cost 1, grants 5 Block plus +1 Block per Pluck stack
+
+Buzzsword – Cost 2, deals 12 damage; StressReliefFinisher; scales with Pluck and Venture
+
+Hand Cannon – Cost 1, 8 damage; exert 1 to repeat and apply 2 Weak
+
+Incoming – Cost 1, add 2 Take Cover cards to hand
+
+Inspiring Presence – Cost 1, gain 1 Pluck each turn
+
+Tactical Manual – Cost 1, draw 2 then discard 1; target ally gains 1 Lethality, scaling with Ashes and Pluck
+
+The Lash – Cost 1, 8 damage and gain 8 Intimidation
+
+Forward Maggots – Cost 0, give 4 Temporary Lethality then exhaust
+
+Take Cover – Cost 0, 4 Block (+1 per Mettle) and exhausts
+
+Blessed Buzzsword – Cost 2, 12 damage; Holy, StressReliefFinisher, and damage increases on kill by 2; scales with Pluck, Venture, Blood
+
+Glower – Cost 0, apply 1 Vulnerable and gain 8 Intimidation
+
+Hold The Line – Cost 2, gives 5 Block and 1 Lethality to every character for each intent aimed at them
+
+Inspire Fear – Cost 2, apply 3 Weak to all enemies (scales with Pluck)
+
+Orders – Cost 1, draw three cards; cards drawn gain +3 damage or block if applicable
+
+The Law – Cost 1, power that adds a Take Cover each turn
+
+Tough It Out – Cost 1, 13 Block; card gains another Painful stack each use
+
+Chain of Command – Cost 2, 18 damage to all enemies; gain 20 Intimidation, scaling with Mettle
+
+Comrades – Cost 1, power: whenever you play Take Cover gain 3 Temporary Lethality; also adds two Take Cover to draw pile
+
+Death or Glory – Cost 1, exhausts; double your Pluck and gain 10 Intimidation
+
+Iron Will – Cost 1, exhausts; owner gains 2 Stress and takes half damage for 3 turns
+
+Last Bastion – Cost 2, 20 Block to party, gain 1 Mettle, then sacrifice a card and exhaust
+
+Quartermaster – Cost 1, create a Buzzsword for each living ally costing 1 less and exhausting
+
+Queen’s Mandate – Cost 2, increase Venture and Ashes by 2 and grant extra scaling to cards in hand
+
+Blackhand
+Corrosive Accelerant – Cost 1, 5 damage and 1 Weak to all enemies; draw if target is Burning
+
+Fire Axe – Cost 1, 8 damage and apply 2 Burning; attack scales with Pluck×2
+
+Flame Revolver – Cost 1, 4 damage and 1 Burning to up to two random enemies; Burning scales with Smog
+
+Rage‑Fueled Axe – Cost 1, 8 damage plus 1 per Burning on target; StressReliefFinisher buff
+
+Storm Cloak – Cost 1, 8 Block plus 2 Block per Pluck
+
+And Then He Exploded – Cost 1, base 8 damage; hits all enemies once per Burning stack on target; +4 damage per Ashes; ExplosiveFinish(10) buff
+
+Axe Me a Question – Cost 2, 11 damage; doubles damage if target is Burning
+
+Hazmat Specialist – Cost 1, 6 Block and 1 Ward to allies, burn a random enemy for 3 Burning
+
+Re‑ignition – Cost 1, give an ally 5 Block and apply 4 Burning to all enemies
+
+Smokescreen – Cost 1, 6 Block plus 1 per Burning stack on anyone; gain 2 Smog; card exhausts
+
+Axe Crazy – Cost 1, power: whenever you play an “Axe” card, gain 2 Blood
+
+Infernalite Cache – Cost 2, gain 4 Smog; Volatile buff
+
+Pyrestarter – Cost 2, 6 Block to allies then discard 2 cards
+
+Pyronox – Cost 1, apply 6 Flames Amplifier to all enemies; gain 1 Venture
+
+Toxic Spill – Cost 2, apply 4 Burning and 6 Poison to all enemies; Poison scales with Ashes×3; Volatile buff
+
+Cog
+Generate Charge – Cost 0, grant 2 Lethality to self
+
+Pneumatic Barrier – Cost 1, 7 Block, exhausts, then manufactures a copy into hand
+
+Replicate Armaments – Cost 1, gain 2 Lethality and copy a chosen card to draw pile
+
+Self‑Upgrading Revolver – Cost 1, 6 damage; increases its damage by 2 after use
+
+Scrap Shield – Cost 1, 12 Block plus 1 Block per Venture
+
+Forge Blast – (energy cost not defined) 10 damage; add one Charge to hand for every 2 Ashes owned
+
+Phlogistonist – Cost 0, gain 3 Smog (power)
+
+Pneumatic Axe – Cost 1, 10 damage then apply 2 Vulnerable; repeats if manufactured; attack scales with Venture
+
+Pneumatic Revolver – Cost 2, hit for 6 damage three times and gain 1 Mettle; repeats if manufactured
+
+Power Core – Cost 1, draw 1 card; while active, each Power card played deals 15 damage to all enemies
+
+Force Shield – Cost 1, 12 Block to all allies plus 2×Ashes and 2×Mettle scaling; gain 1 Venture
+
+Gauss Rifle – Cost 2, 20 damage with Buster; repeats if manufactured
+
+Master Engineer – Cost 2, power giving manufactured cards +5 damage and +3 block
+
+Midnight Oil – Cost 2, power: first card each turn is copied to hand
+
+Revolver Expert – Cost 2, power: first two “Revolver” cards each turn give 1 energy and draw 1 card
+
+Diabolist
+Blood Shield – Cost 2, 13 Block +2 per Blood; Bloodprice 2 and sacrifices a card
+
+Cursed Strike – Cost 1, 7 damage, apply 1 Cursed; if you have ≥3 Mettle, gain 2 Lethality
+
+Dark Whisper – Cost 1, apply 2 Poisoned to all enemies and give 4 Block to allies
+
+Obsidian Candles – Cost 2, manufacture an Eldritch Smoke and draw 2 cards; whenever you sacrifice a card, create another Smoke
+
+Ritual Knife – Cost 1, deal 5 damage twice and gain 1 Blood
+
+Burning Sight – Cost 2, Bloodprice 2; exhaust top two cards and gain 3 Pages (Ashes)
+
+Eldritch Blast – Cost 2, 12 damage; add an Eldritch Smoke; Bloodprice 3
+
+Shadowflame – Cost 2, 15 damage, apply 2 Burning then sacrifice a card
+
+Sorcerous Display – Cost 2, manufacture 2 Eldritch Smoke and draw 2 cards
+
+Unnatural Vigor – Cost 1, gain 2 Venture and manufacture an Eldritch Smoke; card has Sacrifice buff
+
+Eldritch Smoke – Cost 0, 4 Block plus 1 per Smog, then exhausts
+
+Soul Jar – Cost 1, draw a card; if Venture >3 gain 1 energy; carries sell‑value buffs
+
+Balefire – Cost 4, 12 damage twice plus one extra hit per Cursed stack on target; Bloodprice 3, Buster, DamageIncreaseOnKill(5), exhausts
+
+Expert Occultist – Cost 1, power: whenever a card is sacrificed, gain 1 Blood
+
+Hemomancer – Cost 1, double your Blood; if Mettle >5, double again
+
+Horrific Regeneration – Cost 0, heal party 15 HP and give each 1 stress; exhausts
+
+Ill‑Fated Blade – Cost 1, 14 damage; applies We Thirst at combat start (10 stacks) until you kill an enemy
+
+Soulsuck – Cost 1, 15 damage; if it kills, gain 15 Sovereign Infernal Notes; exhausts
+
+Basic Cards
+Defend – Cost 1, 5 Block to an ally
+
+Fire Revolver – Cost 1, deal 6 damage to an enemy
+
+Rummage – Cost 1, discard a chosen card then draw 2; increases Venture on play
+
+Other Cards
+Balefire Revolver – Cost 1, 20 damage; lose 2 HP when played
+
+Coin On The Ground – Cost 1, gain 4 Sovereign Infernal Notes; exhausts
+
+Avaunt! (Disrupt Shielding) – Cost 0, retains itself; interacts with Planar Shielding buff
+
+Duct Taped Card – Cost equals the sum of the two component cards’ costs; plays both sequentially
+
+First/Second/Third/Fourth Incantation – Each costs 1 energy; playing one adds the next to your draw pile, with Fourth Incantation dealing 999 damage
+
+Revolutionary Fervor – Cost 1, draw 3 cards and transform all Fire Revolvers into Balefire Revolvers
+
+Tokens in this folder include:
+
+Eldritch Mutter – Cost 0, 5 damage and 2 Block to all allies, exhausts
+
+Erratic Incantation – Cost 1, 5 damage to a random enemy
+
+Hipfire – Cost 0, 3 damage, exhausts
+
+Looming Blizzard – Cost 0, unplayable; at end of turn characters with Frostbite take 15 damage
+
+Sand in the Eyes – Cost 1, 2 damage and apply 1 Weak
+
+Warm Yourself – Cost 2, remove all Frostbite from yourself; Ethereal and exhausts
+
+Ward – Cost 0, 4 Block to all allies; exhausts
