@@ -1,0 +1,215 @@
+
+Summary
+
+The game defines numerous buffs across different categories. Below are excerpts showing how buffs provide their effects.
+
+Armored – start of turn gain Block equal to stacks
+
+Burning – deals 4 damage plus Blood at turn end or on discard, then decreases stacks
+
+Badass (persona trait) – at combat start the owner gains Mettle equal to stacks
+
+Tougher Enemies (location) – enemies start combat with 40 % more max HP
+
+Toxic Retaliation (enemy) – when struck, applies Poison equal to stacks to the attacker
+
+The Tariffed buff illustrates a playable card buff that increases energy cost by its stacks
+
+Buff list (cards/characters/locations)
+
+Standard character buffs
+
+Armored – gain Block each turn.
+
+Bulwark – increased Block given by stacks.
+
+Lethality – +1 damage per stack.
+
+Temporary Lethality – same as Lethality but expires end of turn.
+
+Weak – 33 % less damage dealt per stack, decreases each turn.
+
+Vulnerable – 50 % more damage taken for N turns.
+
+Intangible – every hit reduced to 1 damage, removed end of turn.
+
+Frostbite – lose 1 Dexterity and Lethality per stack.
+
+Titan – reduce incoming damage by stacks.
+
+Regeneration – heal stacks at turn end.
+
+Burning – 4+damage each turn/discard (scales with Blood).
+
+Playable card buffs
+
+Buster – +50 % damage against blocked enemies per stack.
+
+Cost Increased – card costs +1 for N turns.
+
+Tariffed – card costs stacks more energy.
+
+Painful – when played, deal stacks damage to owner.
+
+Sweeper – card damages all enemies for stacks when played.
+
+RetainBuff – card stays in hand.
+
+Ethereal – card exhausts at end of turn.
+
+Volatile – on discard, card plays itself then exhausts another card.
+
+Unstable – card exhausts if retained.
+
+Haunting – if retained, owner gains Stress stacks.
+
+Figment – card exhausts if in hand at end of turn.
+
+Sticky – if retained, apply Stunned equal to stacks to owner.
+
+Stunned – next stacks cards drawn cost +1.
+
+Heavy – on draw, owner draws 1 fewer next turn.
+
+Lightweight – on draw, draw an extra card up to stacks times.
+
+Buster, Doubled, HatchesIntoEnemyIfRetained, etc. provide other effects as defined.
+
+Persona buffs (permanent character traits)
+
+Badass – start combat with Mettle.
+
+Blood Knight – start combat with Blood.
+
+Blinding Tattoo – start combat applying Weak to all enemies.
+
+Botched Tattoo – start combat with Weak.
+
+Capitalist Soul – start combat with Venture.
+
+Courageous – start combat with Fearless.
+
+Daring – start combat with Pluck.
+
+Heavy Smoker – start combat with Smog.
+
+Scholar – start combat with Ashes.
+
+Undersider – gain Hell Currency at run start.
+
+Prepper – chance for extra energy at combat start (percent equal to stacks).
+
+Merchant – at run start, a cargo card sells for stacks more Hell currency.
+
+Well-Drilled – revolver attacks deal stacks bonus damage.
+
+Sadist – on kill, remove stacks Stress from owner.
+
+Protective – bonus block to allies when blocking them.
+
+Selfish – owner’s blocks are stacks higher on self, stacks lower on others.
+
+Thief – merchants have one free card (logic stub).
+
+Giant Killer – start combat with Buster stacks.
+
+Strong Back – apply Lightweight to random cargo card at combat start.
+
+Huntsman and SoulTrapper are placeholders.
+
+Location buffs
+
+Additional Hell Currency – adds a currency reward equal to stacks.
+
+Additional Pounds Sterling – adds currency reward equal to stacks.
+
+Another Card Reward – adds an extra card reward.
+
+Upgraded Card Rewards – card rewards are upgraded.
+
+Guaranteed Relic / Guaranteed Rare Card – ensures specified reward after combat.
+
+Guaranteed Specific Relic – gives a specific relic at combat end.
+
+Merchant Multiplier – merchant offers stacks % more for cargo.
+
+Rock Slides – on location entry all allies take stacks damage.
+
+Eldritch Foes – all enemies start combat with Eldritch Horror.
+
+Tougher Enemies – enemies start with 40 % more max HP.
+
+Treasure-debuff files (Windstorm, Trapped, etc.) are placeholders.
+
+Monster-specific buffs
+(all reside in src/gamecharacters/buffs/enemy_buffs)
+
+Absolute Zero Doctrine – each turn the healthiest hero gains Frostbite and you gain a Warm Yourself card.
+
+Accursed – players start combat with Cursed stacks.
+
+Audit Pressure – if >3 cards played this turn, players lose Dexterity stacks.
+
+Blood God – when a sacrifice occurs, enemy gains Lethality stacks.
+
+Cargo Sensitive – playing a cargo card deals 20 damage to the buffed enemy.
+
+Decaying – lose stacks HP at end of turn (ignores block).
+
+Delicious – when struck, attacker gains Next Turn Lethality stacks.
+
+Designated Foe – mark from Duelist; others deal no damage.
+
+Desirous – first stacks cards each turn exhaust on play.
+
+Despair Nexus – end of turn reduce each resource by stacks.
+
+Do Not Look At Me – targeting this enemy applies Stress stacks to the attacker.
+
+Duelist – marks a random player as Designated Foe; takes no damage from others.
+
+Ear Worm – status card dealing stacks damage each turn; damage increases each turn kept.
+
+Egg Layer – at turn start adds “Eggs” to random draw pile cards.
+
+Fear Eater – damage bonus = stacks × target stress.
+
+Foreseen – playing this card gives Lethality stacks to all enemies.
+
+Grand Armée Eternal – when an ally dies, gain Lethality 2.
+
+Greed Incarnate – cargo cards heal enemy and give Lethality; if it takes 50+ damage in one turn it grants 15 currency.
+
+Guilt – playing cost>2 cards exhausts stacks cards from discard.
+
+Harbinger of Fate – flavor buff, no additional effect.
+
+Idol – when attacked, all enemy intents target the attacker.
+
+Leeching Bite – heals stacks HP when dealing damage.
+
+Lumbering – every card played adds stacks % damage taken for the turn.
+
+Minion – dies when no non‑minion enemies remain.
+
+Muse – playing a zero-cost card grants Lethality stacks.
+
+Penance – playing cost ≤2 cards increases their cost by stacks.
+
+Production Quota – whenever a card exhausts, deal 3 damage to all heroes.
+
+Prophet – 20 % chance on drawing a card to apply Foreseen stacks.
+
+Regeneration – heals stacks HP each turn.
+
+Robotic – negates every other debuff.
+
+Rust Monster – on hit, reduce block on a random card by stacks.
+
+Self Destruct – after secondaryStacks turns deals 999 self-damage and stacks damage to all players.
+
+Signal Interference – whenever a player card is played, deal stacks damage to a random player.
+
+Tariff Aura – at start of turn a random hand card costs +1 energy.
+
+Toxic Retaliation – when struck, apply Poison stacks to attacker.
