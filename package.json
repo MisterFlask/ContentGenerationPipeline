@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node build/pipeline.js",
+    "cli": "node build/cli.js",
     "test": "tsc --noEmit"
   },
   "keywords": [],

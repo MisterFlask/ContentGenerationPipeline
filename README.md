@@ -14,10 +14,23 @@ It generates textual content for a configurable entity type using GPT models and
 
 ## Usage
 
-To run the included example pipeline:
+The generator consumes several input text files stored in the repository root:
+
+- `CARDS.txt` – example cards grouped by class
+- `BUFF_EXAMPLES.txt` – sample buff descriptions
+- `CLASSES.txt` – the list of class names
+- `CLASS_DESCRIPTIONS.txt` – brief summaries of each class drawn from the card examples
+
+You can run the generator through the CLI which exposes several commands:
 
 ```bash
-npx ts-node src/pipeline.ts
+npx ts-node src/cli.ts <command> [--count N] [--output DIR]
 ```
 
-This will generate a set of entities, write them to `output/<entity>.yaml`, and download images to `output/images/`.
+Available commands are:
+
+- `cards` – generate new cards complete with image prompts and cheeky commentary.
+- `persona-buffs` – generate new persona trait buffs.
+- `describe-classes` – generate aesthetic/mechanical descriptions for each class.
+
+Output files are written to the chosen directory (default `./output`) with images saved under `images/` when applicable.
