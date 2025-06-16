@@ -8,6 +8,7 @@ export interface PipelineConfig {
   outputDir: string;
   entityCount: number;
   entityType: EntityType;
+  additionalContext?: string;
 }
 
 export async function runPipeline(cfg: PipelineConfig, client: OpenAIClient) {
@@ -20,7 +21,11 @@ export async function runPipeline(cfg: PipelineConfig, client: OpenAIClient) {
   if (cfg.entityType.examples) {
     examplesSection = `Here are some examples:\n${cfg.entityType.examples}`;
   }
-  const prompt = `You are generating ${cfg.entityType.name} data. Each entity has the following fields:\n${fields}\n${examplesSection}\nGenerate ${cfg.entityCount} items in JSON format.`;
+  let prompt = `You are generating ${cfg.entityType.name} data. Each entity has the following fields:\n${fields}\n${examplesSection}`;
+  if (cfg.additionalContext) {
+    prompt += `\n${cfg.additionalContext}`;
+  }
+  prompt += `\nGenerate ${cfg.entityCount} items in JSON format.`;
 
   const completion = await client.chat([
     { role: 'system', content: 'You are a content generation assistant.' },
@@ -34,24 +39,27 @@ export async function runPipeline(cfg: PipelineConfig, client: OpenAIClient) {
   let idx = 0;
   for (const item of doc) {
     const baseName = `${cfg.entityType.name.toLowerCase()}_${idx}`;
-    const imagePrompt = item.image_description || `Image for ${item.name}`;
-    const images = await client.createImage(
-      imagePrompt,
-      cfg.entityType.image.n,
-      cfg.entityType.image.size,
-      cfg.entityType.image.style,
-    );
-    images.forEach((img, i) => {
-      const fname = `${baseName}_${i}.png`;
-      const dest = join(imagesDir, fname);
-      fetch(img.url)
-        .then((res: any) => res.arrayBuffer())
-        .then((buff: ArrayBuffer) => {
-          writeFileSync(dest, Buffer.from(buff));
-        });
-      item[`${cfg.entityType.image.n > 1 ? 'image_names' : 'image_name'}`] ||= [];
-      item[`${cfg.entityType.image.n > 1 ? 'image_names' : 'image_name'}`].push(fname);
-    });
+    if (cfg.entityType.image.n > 0) {
+      const imagePrompt = item.image_description || `Image for ${item.name}`;
+      const images = await client.createImage(
+        imagePrompt,
+        cfg.entityType.image.n,
+        cfg.entityType.image.size,
+        cfg.entityType.image.style,
+      );
+      images.forEach((img, i) => {
+        const fname = `${baseName}_${i}.png`;
+        const dest = join(imagesDir, fname);
+        fetch(img.url)
+          .then((res: any) => res.arrayBuffer())
+          .then((buff: ArrayBuffer) => {
+            writeFileSync(dest, Buffer.from(buff));
+          });
+        const key = cfg.entityType.image.n > 1 ? 'image_names' : 'image_name';
+        item[key] ||= [];
+        item[key].push(fname);
+      });
+    }
     idx++;
   }
 
